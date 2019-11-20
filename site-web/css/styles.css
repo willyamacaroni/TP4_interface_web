@@ -1,0 +1,583 @@
+/* ================================ PAGE ==============================================*/
+body 
+{
+	margin:0; /* on enlève les petites marges par défaut */
+}
+
+#page /* division qui englobe toute la page */
+{
+	/* par défaut, la police de caractères utilisée est "Times New Roman" */
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url("../images/connectwork/connectwork.png");
+	background-color: white;
+	background-attachment: fixed;
+}
+
+#page > header /* le style s'applique au premier "header" de la page */
+{
+	background-color: #171717;
+	background-position: center;
+	height: 300px; /* à modifier selon les besoins */
+	text-align: center; /* on centre le contenu de l'en-tête */
+}
+
+#page > header h1 /* le style s'applique au titre de niveau 1 du premier "header" de la page */
+{
+	display: none;	
+}
+h2
+{
+	text-align: center;
+	font-size: 160%;
+	text-decoration-line: underline;
+}
+ul
+{
+	list-style-image: url("../images/puce.png");
+}
+
+/* ============================== MENU DU HAUT ===============================*/
+#menu_du_haut nav
+{
+	
+	
+	background-color: white;
+	height: 40px;
+	text-align: right;
+	padding-right: 20%;
+	text-transform: uppercase;
+	font-family: 'Manjari', sans-serif;
+
+}
+
+#menu_du_haut nav li
+{
+	display: inline-block;
+	position: relative;
+	height: 40px;
+}
+
+#menu_du_haut nav ul
+{
+	margin:0;
+	padding:0;
+	height: 40px;
+}
+
+#menu_du_haut nav a
+{
+	color:black;
+	display: inline-block;
+	font-weight: bold;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-right: 8px;
+	margin-left: 8px;	
+	font-size: small;
+}
+
+#menu_du_haut nav li:hover
+{
+	background-color: rgb(150, 25, 27);
+}
+
+
+/* ------- Modification visuel des liens ---------------*/
+
+a:link 
+{
+	text-decoration: none;
+}
+main a:hover
+{
+	text-decoration: underline;
+}
+/*================= MENU DE GAUCHE============================================================== */
+#menu_de_gauche
+{
+	display: flex;
+}
+/* rgb(128, 24, 25); */
+#menu_de_gauche nav ul
+{
+	background-color: rgb(23,23,23);
+
+	width: 200px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Manjari', sans-serif;
+
+	margin-left: 20px;
+	
+	padding-left: 0px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 2px solid white;
+	border-radius: 4px 4px 4px 4px;
+}
+#menu_de_gauche nav li
+{
+
+	list-style: none;
+}
+
+#menu_de_gauche nav a
+{
+	
+	color:white;
+	padding-top: 2px;
+}
+
+#menu_de_gauche nav li:hover
+{
+	background-color: rgb(150, 25, 27);
+}
+#menu_de_gauche nav
+{
+	margin-left: 10px;
+	padding-right: 20px;
+		
+
+
+
+
+}
+
+/* ======================================== MAIN ===============================================*/
+main 
+{
+	margin-left: 2%; 
+	margin-right: 20%;
+	min-height: 420px; /* hauteur minimale; sinon la hauteur s'ajustera au contenu */
+	background-color: rgba(255,255,255, 0.8);
+	border-radius: 10px;
+	padding-top: 1%;
+	color: black;
+	padding:2%;
+	border:2px solid black;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	width: 80%;
+}
+/* ------- TITRE H1,H2,H3.... ---------------*/
+
+h2
+{
+    font-family: 'Manjari', sans-serif;
+}
+
+/* -----FLECHE RETOUR VERS LE HAUT--------*/
+
+.fleche_haut
+{
+	position: fixed;
+	bottom: 10%;
+	right: 2%;
+}
+
+/* ========================================= FOOTER ===============================================*/
+
+footer
+{
+	padding: 1px;
+	color:white;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 50px;
+	text-align: left;
+	padding-left: 2%;
+
+}
+footer p
+{
+	font-family: Manjari, sans-serif;
+}
+footer a:hover
+{
+	color: blueviolet;
+}
+
+/* ========================================== PAGE ACCUEIL =======================================*/
+
+
+#imageAccueil /* Image dans l'accueil */
+{
+	float: right;
+	border:2px solid white;
+	margin: 2%;
+	box-shadow:   5px 10px 5px grey;
+}
+
+#paragAccueil /* Paragraphe accueil*/
+{
+	width: 60%;
+	text-align: justify;
+	line-height: 1.5;
+	padding-bottom: 30px;
+}
+
+#h2Longueur /* Permet de pouvoir mettre ma photo à droite du h2 */
+{
+	width: 30%;
+}
+
+/* =========================================== PAGE ACTEURS =======================================*/
+.imageBordure:hover
+{
+	transition: 0.5s ease-in-out;
+	opacity: 1;
+	border: 2px solid white;
+}
+.imageBordure
+{
+	opacity: 0.8;
+	border: 2px solid black;
+}
+.flexActeurs
+{
+	border: 3px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	background-color: rgb(150, 25, 27);
+}
+.fontTexteActeur
+{
+	font-style: bold;
+	font-size: 120%;
+	text-align: center;
+	color: white;
+}
+#h2Color
+{
+	color:white;
+	font-size: 200%;
+}
+#paragrapheDisposition
+{
+	width: 50%;
+	font-size: 130%;
+	background-color: white;
+	padding: 10px;
+	border-radius: 10px 10px 10px 10px;
+	border: 3px solid black;
+}
+/* ========================BACKGROUND ACTEURS=======================*/
+
+#backgroundArturo
+{
+	background-image: url("../images/acteurs-photo/arturo.jpg");
+}
+#backgroundBerlin
+{
+	background-image: url("../images/acteurs-photo/berlin.jpg");
+}
+#backgroundDenver
+{
+	background-image: url("../images/acteurs-photo/denver.jpg");
+}
+#backgroundHelsinki
+{
+	background-image: url("../images/acteurs-photo/helsinki.jpg");
+}
+#backgroundProf
+{
+	background-image: url("../images/acteurs-photo/le_prof.jpg");
+}
+#backgroundMonica
+{
+	background-image: url("../images/acteurs-photo/monica.jpg");
+}
+#backgroundMoscou
+{
+	background-image: url("../images/acteurs-photo/moscou.jpg");
+}
+#backgroundNairobi
+{
+	background-image: url("../images/acteurs-photo/nairobi.jpg");
+}
+#backgroundRaquel
+{
+	background-image: url("../images/acteurs-photo/raquel.jpg");
+}
+#backgroundRio
+{
+	background-image: url("../images/acteurs-photo/rio.jpg");
+}
+#backgroundTokyo
+{
+	background-image: url("../images/acteurs-photo/tokyo.jpg");
+}
+/* ============================== FILMOGRAPHIE ==================================== */
+/*----------------titre----------*/
+#producteur
+{
+	text-align: center;
+	font-size: 200%;
+	text-decoration: underline;
+}
+/* ------------Biographie du réalisateur------------ */
+.biographie
+{
+	margin-right: 5%;
+	text-align: justify;
+	overflow: auto;
+}
+.biographie img
+{
+	float:right;
+	margin-left: 2%;
+	border-radius: 10px;
+	opacity: 1;
+	border: rgba(255,255,255, 0)solid 3px;
+}
+.biographie img:hover
+{
+	border: white solid 3px;
+}
+.biographie p
+{
+	margin-top: 0;
+	font-size: 120%;
+}
+#filmographie, #biographie /* pour les sous-titres de la page */
+{
+	font-weight: normal;
+	font-size: 150%;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-style: solid;
+	border-width: 1.5px;
+	border-radius: 4px;
+}
+/* ------------Filmographie du réalisateur------------ */ 
+.filmographie /* présentation */
+{
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+}
+.series img /* présentation */
+{
+	margin-top: 5%;
+	width: 100%;
+	border: #171717 solid 3px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+	opacity: 0.6;
+}  
+.series img:hover /* effet hover*/
+{
+	transition: 0.5s ease-in-out;
+	opacity: 1;
+}
+.date /* année du film/série */
+{
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 5px 25px;
+	color: white;
+	border-radius: 10px 10px 10px 10px;
+	text-align: center;
+
+}
+/* ============================================ FILMOGRAPHIE--> ACTEUR ============================================ */
+
+.acteurP li
+{
+	font-size: 105%;
+}
+/* ============================================ PAGE NOUVELLES ============================================ */
+
+article .nouvelles
+{
+	max-height: 150px;
+	border: #4b4a4a dotted 2px;
+	padding: 1%;
+	overflow: auto;
+	text-align: justify;
+}
+#divNouvelles article
+{
+	max-width: 47%;
+	padding: 1%;
+	margin-bottom: 1%;
+	border: gray inset 2px;
+	box-shadow: 0px 0px 0px 1px black;
+}
+#divNouvelles
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/* ============================================ BANDE ANNONCE ============================================ */
+#conteneurBD
+{
+	margin-top: 5%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#conteneurBD p
+{
+	text-align: center;
+	font-weight: bold;
+}
+#conteneurBD img
+{
+	border-radius: 100%;
+	border: black solid 2px;
+}
+#conteneurBD img:hover
+{
+	height: auto;
+	border: white solid 2px;
+}
+.divBD
+{
+	padding: 2%;
+}
+.bandeAnnonceYT iframe
+{
+	display: block;
+	width: 444;
+	height: 250px;
+	margin: 0 auto;
+}
+.bandeAnnonceYT p
+{
+	text-align: center;
+}
+/* ============================================ COMMENTAIRES ============================================ */
+form
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+input[type=text], textarea, select, #final input
+{
+	border: 2px solid black;
+	border-radius: 5%;
+	/* transition stylé pour la bordure (facultatif) */ 
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+	resize: none;
+}
+input[type=text]:focus, textarea:focus, select:focus, #final input:hover
+{
+	border: 2px solid white;
+}
+label
+{
+	display: inline-block;
+	width: 120px;
+}
+#appreciation
+{
+	margin-left: 0%;
+	margin-right: 6%;
+}
+form div
+{
+	margin-top: 20px;
+	display: block;
+	flex-basis: 40%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#commentaires p
+{
+	display: flex;
+}
+#preferences ul
+{
+	padding-left: 0;
+}
+#preferences ul p
+{
+	text-decoration: underline;
+}
+#final input
+{
+	padding: 2.5% 5%;
+	background-color: #4b4a4a;
+	color: white;
+}
+#final
+{
+	margin-left: 75%;
+}
+/* ============================================ GALERIE-VIGNETTES ============================================ */
+#galerie
+{
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	justify-content: space-around;
+	
+}
+#galerie img
+{
+	display: block;
+	border-radius: 5%;
+	border: 2px solid rgba(0, 0, 0, 0);
+}
+#galerie img:hover
+{
+	border: 3px solid rgb(128, 24, 25);
+}
+#galerie figcaption
+{
+	text-align: center;
+}
+#galerie figcaption:hover
+{
+	font-size: 102%;
+}
+#galerie figure
+{
+	margin: 25px 25px;
+}
+#galerie li
+{
+	list-style: none;
+}
+
+/* ============================================ GALERIE IMAGES TAILLE RÉEL ==================================== */
+#body-galerie
+{
+	background: url(../images/connectwork/connectwork.png) repeat;
+}
+#body-galerie h1
+{
+	font-family: 'Exo', sans-serif;
+	text-transform: uppercase;
+	color: whitesmoke;
+	background-color: rgba(128, 24, 25);
+	display: block;
+	margin: 1% 30%;
+	text-align: center;
+	
+}
+#body-galerie img
+{
+	display: block;
+	margin: 0 auto;
+}
+#body-galerie figcaption
+{
+	color: white;
+	text-align: center;
+	margin: 2% 0;
+	font-size: 140%;
+	font-family: 'Courier New', Courier, monospace;
+}
+#body-galerie figcaption:hover
+{
+	font-size: 142%;
+	color: blue;	
+}

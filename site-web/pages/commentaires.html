@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!-- Samuel Picard et Willyam Arcand, 6 octobre 2019 -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+
+<!--EN TÊTE-->
+<head> 
+	<meta charset="utf-8" />
+	<title>La Casa Del Papel (Site non officiel)</title>
+	<link rel="stylesheet" href="../css/styles.css" />
+	<link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+	<link rel="icon" href="../favicon.jpg" />
+</head> 
+
+<!--LE CORPS DU SITE-->
+<body>
+	<!-- Division principale qui contient tous les éléments de la page -->
+	<div id="page">
+	
+		<!-- En-tête de la page, avec un logo ou une bannière -->
+		<header id="haut">
+			<a href="../index.html"><img src="../images/banniere.jpg" alt= "logo de la série Casa De Papel" /></a>
+			<h1 id="displayNone">La Casa De Papel</h1>
+		</header>
+		
+		<!-- Menu principal -->
+		<div id="menu_du_haut">
+			<nav>
+				<ul class="lienColor">
+					<li><a href="liens.html">Liens</a></li>
+					<li><a href="sources.html">Sources</a></li>
+					<li><a href="plan.html">Plan du site</a></li>
+					<li><a href="commentaires.html">Commentaires</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div id="menu_de_gauche">
+			<nav>
+				<ul>
+					<li><a href="../index.html">Accueil</a></li>
+					<li><a href="nouvelles.html">Nouvelles</a></li>
+					<li><a href="photos.html">Acteurs</a></li>
+					<li><a href="filmographie.html">Filmographie</a></li>
+					<li><a href="bandeannonce.html">Bande-Annonce</a></li>
+					<li><a href="critique.html">Critique</a></li>
+					<li><a href="galerie.html">Galerie</a></li>
+					
+
+				</ul>
+			</nav>
+		
+		<!-- Partie "contenu" qui changera sur chacune des pages -->
+		<main>
+			<h2>Commentaires</h2>
+			<!--Formulaire de commentaires-->
+			<div class="Commentaires">
+				<form method="POST" action="mailto:toto@gmail.com" enctype="text/plain">
+					
+					<div id="infoPerso">
+						<p>
+							<label for="txt_nom">Nom : </label>
+							<input type="text" name="txt_nom" id="txt_nom" required>
+						</p>
+
+						<p>
+							<label for="txt_prenom">Prénom : </label>
+							<input type="text" name="txt_prenom" id="txt_prenom" required>
+						</p>
+					</div>
+
+					<div id="region">
+						<p>
+							<label for="txt_pays">Pays : </label>
+							<input type="text" name="txt_pays" id="txt_pays" value="Canada">
+						</p>
+
+						<p>
+							<label for="txt_province">Province : </label>
+							<input type="text" name="txt_province" id="txt_province" required>
+						</p>
+					</div>
+
+					<div id="commentaires">
+						<p>
+							<label for="txt_commentaires">Commentaires : </label>
+							<textarea name="txt_commentaires" id="txt_commentaires" cols="20" rows="7"></textarea>
+						</p>
+					</div>
+
+					<div id="preferences">
+							<ul>
+								<p>
+									Vos préférences : 
+								</p>
+								<li>
+									<label for="txt_province">Drame : </label>
+									<input type="checkbox" name="preferences" id="drame" value="d">
+								</li>
+
+								<li>
+									<label for="txt_province">Comédie : </label>
+									<input type="checkbox" name="preferences" id="comedie" value="c">
+								</li>
+
+								<li>
+									<label for="txt_province">Action : </label>
+									<input type="checkbox" name="preferences" id="action" value="a">
+								</li>
+
+								<li>
+									<label for="txt_province">Suspence : </label>
+									<input type="checkbox" name="preferences" id="suspence" value="s">
+								</li>
+
+								<li>
+									<label for="txt_province">horreur : </label>
+									<input type="checkbox" name="preferences" id="horreur" value="h">
+								</li>
+							</ul>
+					</div>
+
+					<div id="age">
+						<label for="age">votre age : </label>
+
+						<select name="age" id="age">
+							<optgroup label="votre age:">
+								<option value="0">0 à 10 ans</option>
+								<option value="1">11 à 20 ans</option>
+								<option value="2">21 à 30 ans</option>
+								<option value="2">31 à 40 ans</option>
+								<option value="2">50ans et plus</option>
+							</optgroup>
+						</select>
+					</div>
+
+					<div id="appreciation">
+						<fieldset id="appreciationField">
+							<legend>Vous trouvez le site-web...</legend>
+							<ul>
+								<li>
+									<label for="excellent">Excellent :  </label>
+									<input type="radio" name="appreciationField" id="excellent" value="excellent" checked>
+								</li>
+								<li>
+									<label for="tresBien">Très bien :  </label>
+									<input type="radio" name="appreciationField" id="tresBien" value="tresBien">
+								</li>
+								<li>
+									<label for="moyen">Action : </label>
+									<input type="radio" name="appreciationField" id="moyen" value="moyen">
+								</li>
+								<li>
+									<label for="bof">Bof : </label>
+									<input type="radio" name="appreciationField" id="bof" value="bof">
+								</li>
+							</ul>
+						</fieldset>
+					</div>
+
+					<div id="final">
+						<input type="submit" value="Envoyer"> 
+						<input type="reset" value="Réinitialiser"> 
+					</div>
+				
+				</form>
+
+			</div>
+
+		</main> 
+		</div>
+		<!-- FLECHE VERS LE HAUT-->
+			<!-- <a href="#haut">
+				<img src="../images/arrow-up.png" alt="Flèche vers le haut" class="fleche_haut">
+			</a> -->
+		<!-- PIED DE PAGE-->
+		<footer>
+			<p>Crée par Samuel Picard et Willyam Arcand. Des Questions? Envoyez-nous un <a href="mailto: moums97@hotmail.fr">courriel</a>!</p>		
+		</footer>
+		
+	</div> <!-- Fin de la division "page" -->
+</body>
+
+</html>
