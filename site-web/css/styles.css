@@ -581,3 +581,27 @@ form div
 	font-size: 142%;
 	color: blue;	
 }
+/* ======================================= DESIGN ADAPTATIF (tablette) =============================== */
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+header img {
+	width: 65%;
+	height: 65%;
+}
+}
+
+/* ======================================= DESIGN ADAPTATIF (mobile) =============================== */
+
+
+
+
+
+
+
+
+
+
+
+
+}
