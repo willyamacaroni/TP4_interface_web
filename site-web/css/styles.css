@@ -602,11 +602,48 @@ form div
 /* ======================================= DESIGN ADAPTATIF (tablette) =============================== */
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-
-header img {
-	width: 65%;
-	height: 65%;
+#page{
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto auto;
 }
+header img 
+{
+	width: 90%;
+	height: 90%;
+}
+
+header {
+	grid-area:1/1/2/2;
+}
+#menu_de_gauche{
+	grid-area: 3/1/4/2;
+	text-align: right;
+	width:auto;
+	border-radius:0;
+	
+}
+#menu_du_haut{
+	grid-area:2/1/3/2;
+}
+main{
+	grid-area:4/1/5/2
+}
+footer{
+	grid-area: 5/1/6/2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 /* ======================================= DESIGN ADAPTATIF (mobile) =============================== */
