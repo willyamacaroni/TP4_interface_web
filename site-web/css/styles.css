@@ -17,7 +17,7 @@ body
 {
 	background-color: #171717;
 	background-position: center;
-	height: 300px; /* à modifier selon les besoins */
+	height: auto; /* à modifier selon les besoins */
 	text-align: center; /* on centre le contenu de l'en-tête */
 }
 
@@ -229,10 +229,9 @@ footer a:hover
 
 #paragAccueil /* Paragraphe accueil*/
 {
-	width: 60%;
 	text-align: justify;
 	line-height: 1.5;
-	padding-bottom: 30px;
+	
 }
 
 #h2Longueur /* Permet de pouvoir mettre ma photo à droite du h2 */
@@ -417,7 +416,7 @@ article .nouvelles
 }
 #divNouvelles article
 {
-	max-width: 47%;
+	width: 47%;
 	padding: 1%;
 	margin-bottom: 1%;
 	border: gray inset 2px;
@@ -599,6 +598,15 @@ form div
 	font-size: 142%;
 	color: blue;	
 }
+/* ================================================================= */
+header img{
+	width: 100%;
+	
+}
+#menu_mobile{
+	display:none;
+	
+}
 /* ======================================= DESIGN ADAPTATIF (tablette) =============================== */
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -606,38 +614,97 @@ form div
 	grid-template-columns: 1fr;
 	grid-template-rows: auto auto auto auto auto;
 }
-header img 
-{
-	width: 90%;
-	height: 90%;
+#menu_mobile{
+	display:none;
+	
 }
 
 header {
 	grid-area:1/1/2/2;
 }
+header img{
+	width: 65%;
+	height: 65%;
+}
 #menu_de_gauche{
 	grid-area: 3/1/4/2;
-	text-align: right;
-	width:auto;
-	display:inline-block;
-	border-radius:0;
 	
+	width:auto;
+	
+	padding-right: 0;
+
+}
+#menu_de_gauche nav ul{
+	border:0;
+	border-radius: 0;
+	margin:0;
+	padding:0;
+	background-color:white;
+	width:100%;
+	text-align: right;
+
+	
+}
+
+#menu_de_gauche nav li{
+	display:inline-block;
+	margin-top:5px;
+	
+}
+
+#menu_de_gauche nav li a{
+	color:black;
+}
+
+#menu_de_gauche nav{
+	margin:0;
 }
 
 #menu_du_haut{
 	grid-area:2/1/3/2;
 }
+
 main{
 	grid-area:4/1/5/2
+	
+}
+main{
+	margin: 0;
+	border:0;
+	border-radius:0;
 }
 footer{
 	grid-area: 5/1/6/2;
 }
 
+#menu_de_gauche ul{
+margin: 0;
+width: 100%;
+border:0;
+}
 
+nav{
+	margin:0;
+}
 
-
-
+#menu_du_haut nav ul li{
+	height: 50%;
+}
+#menu_du_haut nav ul{
+	height: 50%;
+}
+#menu_du_haut nav{
+	height: 50%;
+}
+.fleche_haut{
+	display:none;
+}
+#imageAccueil{
+	width: 30%;
+}
+iframe{
+	width: 480px;
+}
 
 
 
@@ -649,10 +716,66 @@ footer{
 }
 
 /* ======================================= DESIGN ADAPTATIF (mobile) =============================== */
-
-
-
-
+@media only screen and (max-width: 768px)
+{
+	#page{
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto auto;
+		
+	}
+	header{
+		grid-area: 1/1/2/2;
+	}
+	header img{
+		width: 50%;
+		height: 50%;
+	}
+	#menu_de_gauche {
+		display: none;
+	}
+	#menu_du_haut{
+		display: none;
+	}
+	#menu_mobile nav {
+		grid-area: 2/1/3/2;
+	}
+	#menu_mobile{
+		background-color: green;
+		display:block;
+	}
+	main{
+		grid-area:3/1/4/2;
+	}
+	footer{
+		grid-area:4/1/5/2;
+	}
+	main{
+		border:0;
+		border-radius: 0;
+		margin:0;
+		
+	}
+	.fleche_haut{
+		display:none;
+	}
+	#lecteur_audio{
+		display:none;
+	}
+	#imageAccueil{
+		width: 30%;
+	}
+	img {
+		width: auto;
+	}
+	#divNouvelles{
+		display:block;
+	}
+	#divNouvelles article{
+		width:97%;
+	}
+	iframe{
+		width: 320px;
+	}
 
 
 
